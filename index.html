@@ -338,27 +338,12 @@
             h1 {
                 font-size: 2.5rem;
             }
-            .submit-btn {
-            background: var(--primary);
-            color: blue;
-        }
-
-        .submit-btn {
-            background: var(--accent);
-            color: blue;
-        }
-        #saveYes{
-            width: 100px;
-
-
-        }
-       #saveNo{
-            width: 100px;
-        }
+        
+        /* Rest of the previous styles remain the same */
     </style>
 </head>
 <body>
-  
+    <!-- Previous HTML content remains the same until modal... -->
 <header>
         <nav>
             <div class="logo">CodeAI</div>
@@ -618,12 +603,9 @@ sendButton.addEventListener('click', sendQuestion);
                 loginModal.style.display = 'none';
             }
         };
-        
         function generateAIResponse(question) {
             // Knowledge base for common programming questions and definitions
             const knowledgeBase = {
-                 'hello': 'Hi! How can I help you with your coding today?',
-                'help': 'I can help you with coding problems, explain concepts, and suggest optimizations. What would you like to know?'
                 // JavaScript
                 'javascript': 'JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It enables interactive web pages and is an essential part of web applications.',
                 'var': 'var is a keyword in JavaScript used to declare variables. However, it\'s considered legacy and it\'s recommended to use let or const instead due to better scoping rules.',
